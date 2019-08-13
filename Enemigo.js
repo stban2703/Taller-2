@@ -1,5 +1,5 @@
 class Enemigo{
-    constructor(posX, posY, ancho, alto, r, g, b, resistencia){
+    constructor(posX, posY, ancho, alto, r, g, b, resistencia, velocidad){
         this.posX=posX;
         this.posY=posY;
         this.ancho=ancho;
@@ -8,13 +8,11 @@ class Enemigo{
         this.g=g;
         this.b=b;
         this.resistencia=resistencia;
+        this.velocidad=velocidad;
     }
 
-dibujarEnemigo(){
-
-    }
-
-moverEnemigo(){
-
+    moverEnemigo(){
+    this.posY += this.velocidad;
+    
     }
 }
